@@ -38,3 +38,45 @@ body{
     margin: 0 auto;
     width: 50%;
 }
+
+#wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-white);
+}
+
+.number{
+    /* height: calc(50vh / 4 - 15px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh / 4 - 15px);
+    width: calc(50vh / 4 - 15px);
+    background-color: var(--dark-green);
+}
+
+.number img{
+    width: 30px;
+    height: 30px;
+}
+
+.days{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#december{
+    width: 100%;
+    height: calc(50vh / 4 - 15px);
+    background-color: var(--snow)
+}
+
+.number,
+#december{
+    border-radius: 10px;
+}
