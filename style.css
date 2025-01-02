@@ -20,7 +20,7 @@ body{
 #box-image{
     color: var(--text-white);
     height: 200px;
-    background-image: url('./img/header-bg.png');
+    background-image: url('./images/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 35px;
@@ -46,21 +46,26 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    color: var(--text-white);
 }
 
-.number{
-    /* height: calc(50vh / 4 - 15px); */
+.number,
+#christmas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.number{
+    /* height: calc(50vh / 4 - 15px); */
     height: calc(50vh / 4 - 15px);
     width: calc(50vh / 4 - 15px);
     background-color: var(--dark-green);
+    color: var(--text-white);
 }
 
-.number img{
+.number img,
+#christmas img{
     width: 30px;
     height: 30px;
 }
@@ -70,13 +75,14 @@ body{
     font-size: 30px;
 }
 
-#december{
+#christmas{
     width: 100%;
     height: calc(50vh / 4 - 15px);
-    background-color: var(--snow)
+    background-color: var(--snow);
+    color: var(--dark-green)
 }
 
 .number,
-#december{
+#christmas{
     border-radius: 10px;
 }
