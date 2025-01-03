@@ -31,7 +31,7 @@ for(let i = 0; i < source.length; i++){
         <div class="modal" id="modal-${i}" style="display: none;">
             <div class="modal-content">
                 <img src="./${item.url}" alt="">
-                <button class="close-modal" onclick="closeModal(${i})">Chiudi</button>
+                <button class="close-modal" onclick="closeModal(${i})">CHIUDI</button>
             </div>
         </div>`
     } else if (item.type === 'text') {
@@ -39,7 +39,7 @@ for(let i = 0; i < source.length; i++){
         <div class="modal" id="modal-${i}" style="display: none;">
             <div class="modal-content">
                 <p>${item.text}</p>
-                <button class="close-modal" onclick="closeModal(${i})">Chiudi</button>
+                <button class="close-modal" onclick="closeModal(${i})">CHIUDI</button>
             </div>
         </div>`
     }
