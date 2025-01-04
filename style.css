@@ -94,6 +94,12 @@ body{
     border: none;
 }
 
+/* classe che cambia lo stile della casella quando cliccata */
+.clicked{
+    background-color: transparent;
+    filter: brightness(50%);
+}
+
 /* modale */
 
 .modal {
