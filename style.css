@@ -55,7 +55,7 @@ body{
 
 /* caselle dei giorni */
 .number,
-#christmas{
+.christmas{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@ body{
 }
 
 .number img,
-#christmas img{
+.christmas img{
     width: 30px;
     height: 30px;
 }
@@ -80,7 +80,7 @@ body{
     font-size: 30px;
 }
 
-#christmas{
+.christmas{
     width: 100%;
     height: 80px;
     background-color: var(--snow);
@@ -88,9 +88,10 @@ body{
 }
 
 .number,
-#christmas{
+.christmas{
     border-radius: 10px;
     cursor: pointer;
+    border: none;
 }
 
 /* modale */
