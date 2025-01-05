@@ -1,8 +1,11 @@
-//individua il contenitore
+//individua il contenitore delle caselle
 const wrap = document.getElementById('wrap-container')
 
 //individua il contenuto della modale
 const content = document.getElementById('content')
+
+//pulsante per azzerare lo stato
+const reset = document.getElementById('reset')
 
 //stato dei pulsanti
 let dayStates = JSON.parse(localStorage.getItem('dayStates')) || {};
@@ -47,6 +50,16 @@ for(let i = 0; i < source.length; i++){
     content.innerHTML += modalHTML;
 }
 
+//azzera la memoria dello storage
+reset.addEventListener('click', () => {
+    location.reload();
+    localStorage.clear();
+})
+
+
+
+//////////////// funzioni ////////////////////
+
 //apre la modale
 function showModal(index){
     const modal = document.getElementById(`modal-${index}`);
@@ -62,6 +75,8 @@ function showModal(index){
 
     //salva lo stato aggiornato
     localStorage.setItem('dayStates', JSON.stringify(dayStates));
+
+    console.log(dayStates);
     
 }
 

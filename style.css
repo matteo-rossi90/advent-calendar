@@ -100,6 +100,27 @@ body{
     filter: brightness(50%);
 }
 
+/* pulsante reset */
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#reset{
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: transparent;
+    color: var(--text-white);
+    background-color: var(--header-blue);
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: rgb(84, 84, 255);
+}
+
 /* modale */
 
 .modal {
