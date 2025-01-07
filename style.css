@@ -187,20 +187,24 @@ body{
 
 /* responsive */
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
+
+    .container{
+        width: 55%;
+    }
 
     #box-image{
         height: 20vw;
-        background-position-y: 4rem;
+        background-position-y: 5.5rem;
     }
-
-    .container {
-            width: 70%;
-        }
 
 }
 
 @media (max-width: 1024px){
+
+    .container {
+        width: 70%;
+    }
 
     #box-image{
         height: 22vw;
